@@ -1,0 +1,109 @@
+/* src/components/Home.css */
+
+/* Full page container */
+#home {
+  background-image: url('../assets/home-bg.jpg') no-repeat center center/cover; /* Correct syntax for background image */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Text color */
+  text-align: center;
+  padding: 20px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+}
+
+/* Main heading style */
+#home h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow for better visibility */
+}
+
+/* Subtext style */
+#home p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  max-width: 800px; /* Limit width for better readability */
+  margin: 0 auto;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+
+#home h1:hover {
+  color: #ffdf00; /* Gold color on hover */
+  transform: scale(1.05); /* Slightly increase size */
+  transition: all 0.3s ease-in-out;
+}
+/* src/components/Home.css */
+
+/* Full page container */
+#home {
+  position: relative; /* Position relative to allow absolute positioning of the pseudo-element */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Text color */
+  text-align: center;
+  padding: 20px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+  overflow: hidden; /* Ensure no overflow from the pseudo-element */
+}
+
+#home::before {
+  content: ''; /* Required for pseudo-element */
+  position: absolute; /* Position absolutely within the parent */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  right: 0; /* Stretch to the right */
+  bottom: 0; /* Stretch to the bottom */
+  background-image: url('../assets/home-bg.jpg'); /* Set the background image */
+  background-repeat: no-repeat; /* No repeat */
+  background-position: center; /* Center the image */
+  background-size: cover; /* Cover the entire area */
+  filter: blur(8px); /* Apply blur effect */
+  z-index: 1; /* Place behind the content */
+}
+
+#home h1,
+#home p {
+  position: relative; /* Position relative to place them above the blurred background */
+  z-index: 2; /* Ensure text is above the blurred background */
+}
+
+/* Main heading style */
+#home h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow for better visibility */
+}
+
+/* Subtext style */
+#home p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  max-width: 800px; /* Limit width for better readability */
+  margin: 0 auto;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+#home h1:hover {
+  color: #ffdf00; /* Gold color on hover */
+  transform: scale(1.05); /* Slightly increase size */
+  transition: all 0.3s ease-in-out;
+}
+#home p:hover
+{
+  color: #000;
+  transform: scale(1.2); /* Slightly increase size */
+  transition: all 0.3s ease-in-out;
+}

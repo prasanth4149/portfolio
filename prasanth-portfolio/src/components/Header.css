@@ -1,0 +1,34 @@
+header {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-bar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-bar li {
+  margin: 0 20px;
+}
+
+.menu-bar li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.menu-bar li a:hover {
+  color: #ffdf00;
+  transform: scale(1.1);
+}

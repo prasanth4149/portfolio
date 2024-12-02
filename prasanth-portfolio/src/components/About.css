@@ -1,0 +1,17 @@
+#about {
+    background: linear-gradient(to bottom, #ff7e5f, #feb47b);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  #about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  #about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
